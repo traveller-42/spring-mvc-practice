@@ -34,4 +34,8 @@ public class HelloController {
         modelAndView.setViewName("help");
         return modelAndView ;
     }
+    @RequestMapping("/reg")
+    public String regitrationForm(){
+        return  "registration";
+    }
 }

@@ -11,7 +11,6 @@
 <html>
 <head>
     <title>ABOUT PAGE</title>
-
 </head>
 <body>
    <h1>SIAMUL HERE</h1>
