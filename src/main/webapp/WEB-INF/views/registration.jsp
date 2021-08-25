@@ -16,65 +16,38 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>Registration Page</title>
 </head>
 <body>
-<div class="container">
-<form>
-  <div class="form-row">
-    <div class="col form-group">
-      <label>First name </label>
-      <input type="text" class="form-control" placeholder="">
-    </div> <!-- form-group end.// -->
-    <div class="col form-group">
-      <label>Last name</label>
-      <input type="text" class="form-control" placeholder=" ">
-    </div> <!-- form-group end.// -->
-  </div> <!-- form-row end.// -->
-  <div class="form-group">
-    <label>Email address</label>
-    <input type="email" class="form-control" placeholder="">
-    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div> <!-- form-group end.// -->
-  <div class="form-group">
-    <label class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="gender" value="option1">
-      <span class="form-check-label"> Male </span>
-    </label>
-    <label class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="gender" value="option2">
-      <span class="form-check-label"> Female</span>
-    </label>
-  </div> <!-- form-group end.// -->
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>City</label>
-      <input type="text" class="form-control">
-    </div> <!-- form-group end.// -->
-    <div class="form-group col-md-6">
-      <label>Country</label>
-      <select id="inputState" class="form-control">
-        <option> Choose...</option>
-        <option>Uzbekistan</option>
-        <option>Russia</option>
-        <option selected="">United States</option>
-        <option>India</option>
-        <option>Afganistan</option>
-      </select>
-    </div> <!-- form-group end.// -->
-  </div> <!-- form-row.// -->
-  <div class="form-group">
-    <label>Create password</label>
-    <input class="form-control" type="password">
-  </div> <!-- form-group end.// -->
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary btn-block"> Register  </button>
-  </div> <!-- form-group// -->
-  <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>
-</form>
-</div>
-<!-- Optional JavaScript; choose one of the two! -->
+<div class="container mt-5">
+  <h1 class="text-center">Registration Form</h1>
+  <form action="/processForm" method="post">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    </div>
 
+    <div class="mb-3">
+      <label for="userName" class="form-label">User Name</label>
+      <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" name="userName">
+    </div>
+
+    <div class="mb-3">
+      <label for="userPassword" class="form-label">User Password</label>
+      <input type="password" class="form-control" id="userPassword" aria-describedby="emailHelp" name="password">
+    </div>
+
+    <div class="container text-center">
+      <button type="submit" class="btn btn-success">
+        Sign Up
+      </button>
+
+    </div>
+
+  </form>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
