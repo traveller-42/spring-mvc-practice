@@ -9,9 +9,9 @@
 <html>
 <head>
     <title>Show ALL Data From Registration Form</title>
-    <h1>${email}</h1>
-    <h2>${userName}</h2>
-    <h3>${password}</h3>
+    <h1>${user.email}</h1>
+    <h2>${user.userName}</h2>
+    <h3>${user.password}</h3>
 </head>
 <body>
 

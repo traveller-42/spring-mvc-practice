@@ -1,7 +1,9 @@
 package com.siamul.controllers;
 
+import com.siamul.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -41,10 +43,8 @@ public class HelloController {
         return  "registration";
     }
     @RequestMapping(path = "/processForm",method = RequestMethod.POST)
-    public String process(@RequestParam("email")String userEmail,@RequestParam("userName")String userName,@RequestParam("password")String password, Model model){
-        model.addAttribute("email",userEmail);
-        model.addAttribute("userName",userName);
-        model.addAttribute("password",password);
+    public String process(@ModelAttribute User user, Model model){
+        model.addAttribute("user",user);
         return "showData";
     }
 
